@@ -4,9 +4,9 @@ import {Nav,Navbar,Container} from "react-bootstrap";
 //import Navbar from "react-bootstrap/Navbar";
 //import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from "../assets/img/logo.svg";
-import Icon1 from "../assets/img/nav-icon1.svg";
-import Icon2 from "../assets/img/nav-icon2.svg";
-import Icon3 from "../assets/img/nav-icon3.svg";
+import IconLink from "../assets/img/nav-icon1.svg";
+import IconFace from "../assets/img/nav-icon2.svg";
+import IconInst from "../assets/img/nav-icon3.svg";
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -28,14 +28,14 @@ const NavBar = () => {
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img src={logo} alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="ms-auto">
             <Nav.Link
               href="#home"
               className={
@@ -66,14 +66,14 @@ const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
-                <img src={Icon1} alt="icon1" />
+              <a href="https://www.facebook.com/">
+                <img src={IconLink} alt="linkedin" />
               </a>
               <a href="#">
-                <img src={Icon2} alt="icon2" />
+                <img src={IconFace} alt="Facebook" />
               </a>
               <a href="#">
-                <img src={Icon3} alt="icon3" />
+                <img src={IconInst} alt="Instagram" />
               </a>
             </div>
 
