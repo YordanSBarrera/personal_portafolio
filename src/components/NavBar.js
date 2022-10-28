@@ -66,13 +66,13 @@ const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.facebook.com/">
+              <a href="https://www.linkedin.com/">
                 <img src={IconLink} alt="linkedin" />
               </a>
-              <a href="#">
+              <a href="https://www.facebook.com/">
                 <img src={IconFace} alt="Facebook" />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/">
                 <img src={IconInst} alt="Instagram" />
               </a>
             </div>
