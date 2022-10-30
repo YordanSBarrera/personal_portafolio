@@ -52,4 +52,3 @@ export const Newsletter = ({ status, message, onValidated }) => {
   );
 };
 
-//export default Newsletter;

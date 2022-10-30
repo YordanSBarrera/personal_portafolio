@@ -1,9 +1,9 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { MailchimpForm } from "./MailchimpForm";
 import logo from "../assets/img/ysb.png";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import IconLink from "../assets/img/nav-icon1.svg";
+import IconFace from "../assets/img/nav-icon2.svg";
+import IconInst from "../assets/img/nav-icon3.svg";
 
 const Footer = () => {
   return (
@@ -16,14 +16,14 @@ const Footer = () => {
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="#">
-                <img src={navIcon1} alt="Icon" />
+              <a href="https://www.linkedin.com/">
+                <img src={IconLink} alt="Icon" />
               </a>
-              <a href="#">
-                <img src={navIcon2} alt="Icon" />
+              <a href="https://www.facebook.com/">
+                <img src={IconFace} alt="Icon" />
               </a>
-              <a href="#">
-                <img src={navIcon3} alt="Icon" />
+              <a href="https://www.instagram.com/">
+                <img src={IconInst} alt="Icon" />
               </a>
             </div>
             <p>Copyright 2022. All Rights Reserved</p>

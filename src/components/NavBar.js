@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from "react";
-//import Container from "react-bootstrap/Container";
 import {Nav,Navbar,Container} from "react-bootstrap";
-//import Navbar from "react-bootstrap/Navbar";
-//import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from "../assets/img/ysb.png";
 import IconLink from "../assets/img/nav-icon1.svg";
 import IconFace from "../assets/img/nav-icon2.svg";
@@ -28,7 +25,7 @@ const NavBar = () => {
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="#home">
           <img src={logo} alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -55,13 +52,13 @@ const NavBar = () => {
               Skills
             </Nav.Link>
             <Nav.Link
-              href="#proyects"
+              href="#project"
               className={
-                activeLink === "proyects" ? "active navbar-link" : "navbar-link"
+                activeLink === "project" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("proyects")}
+              onClick={() => onUpdateActiveLink("project")}
             >
-              Proyects
+              Projects
             </Nav.Link>
           </Nav>
           <span className="navbar-text">
