@@ -28,7 +28,7 @@ const Skills = () => {
 
   return (
     <section className="skill" id="skills">
-      <div className="container">
+      <div className="container" style={{bgcolor:"#308"}}>
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
