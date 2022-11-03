@@ -1,44 +1,46 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import animeflix from "../assets/img/animeflix.jpg";
-import animeflix1 from "../assets/img/animeflix1.jpg";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import imgAnimeFlix from "../assets/img/project-animeflixB.jpg";
+import imgAnimeFlix1 from "../assets/img/project-animeflix500x320.jpg";
+import imgModal from "../assets/img/project-modal.jpg";
+import imgEcommerce from "../assets/img/project-ecommerceCard.jpg";
+import imgEcommerce1 from "../assets/img/project-eCommerce500x320.jpg";
+import projImg from "../assets/img/project-img1.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
- const Projects = () => {
+const Projects = () => {
   const projects = [
     {
       title: "AnimeFlix",
       description: "Development",
-      imgUrl: animeflix,
+      imgUrl: imgAnimeFlix1,
     },
     {
-      title: "tyff",
+      title: "Modal",
       description: " Development",
-      imgUrl: projImg2,
+      imgUrl: imgModal,
     },
     {
-      title: "tujtiu67i",
+      title: "E-Commerce",
       description: " Development",
-      imgUrl: projImg3,
+      imgUrl: imgEcommerce,
     },
     {
-      title: "Anime Neflix",
+      title: "example",
       description: " Development",
-      imgUrl: animeflix1,
+      imgUrl: projImg,
     },
     {
-      title: "asd",
+      title: "E-Commerce",
       description: "Design & Development",
-      imgUrl: projImg2,
+      imgUrl: imgEcommerce1,
     },
     {
-      title: "name 1",
+      title: "AnimeFlix",
       description: " Development",
-      imgUrl: projImg3,
+      imgUrl: imgAnimeFlix,
     },
   ];
 
@@ -117,7 +119,7 @@ import TrackVisibility from "react-on-screen";
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2} alt="fondo"/>
+      <img className="background-image-right" src={colorSharp2} alt="fondo" />
     </section>
   );
 };
