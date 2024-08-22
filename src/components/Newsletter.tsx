@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { Col, Row, Alert } from "react-bootstrap";
 
 type NewsletterProps = {
-  status: string;
-  message: string;
+  status: string | null;
+  message: string | null;
   onValidated: (formData: any) => void;
 };
 
