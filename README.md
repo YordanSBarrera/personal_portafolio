@@ -8,9 +8,11 @@ Si tienes alguna pregunta no dudes en contactarme. ¡Gracias por visitar mi port
 
 yordansaldana8@gmail.com
 
-#-------
-to run...
-...download or clone
-yarn install
-yarn dev
-enjoy
+
+## Available Scripts
+
+In the project directory, you can run:
+
+`yarn install`
+
+`yarn dev`
