@@ -1,14 +1,20 @@
 import { useState, useEffect } from "react";
 import { Col, Row, Alert } from "react-bootstrap";
 
-export const Newsletter = ({ status, message, onValidated }) => {
+type NewsletterProps = {
+  status: string;
+  message: string;
+  onValidated: (formData: any) => void;
+};
+
+const Newsletter = ({ status, message, onValidated }: NewsletterProps) => {
   const [email, setEmail] = useState("");
 
   useEffect(() => {
     if (status === "success") clearFields();
   }, [status]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     email &&
       email.indexOf("@") > -1 &&
@@ -52,3 +58,4 @@ export const Newsletter = ({ status, message, onValidated }) => {
   );
 };
 
+export default Newsletter;

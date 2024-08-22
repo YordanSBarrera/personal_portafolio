@@ -1,9 +1,14 @@
-import React, { useEffect, useState } from "react";
-import {Nav,Navbar,Container} from "react-bootstrap";
-import logo from "../assets/img/logo-ysb.png";
-import IconLink from "../assets/img/nav-icon1.svg";
-import IconFace from "../assets/img/nav-icon2.svg";
-import IconInst from "../assets/img/nav-icon3.svg";
+import { useEffect, useState } from "react";
+import { Nav, Navbar, Container } from "react-bootstrap";
+// import logo from "../assets/img/logo-ysb.png";
+// import IconLink from "../assets/img/nav-icon1.svg";
+// import IconFace from "../assets/img/nav-icon2.svg";
+// import IconInst from "../assets/img/nav-icon3.svg";
+
+const logo = "../assets/img/logo-ysb.png";
+const IconLink = "../assets/img/nav-icon1.svg";
+const IconFace = "../assets/img/nav-icon2.svg";
+const IconInst = "../assets/img/nav-icon3.svg";
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -19,7 +24,7 @@ const NavBar = () => {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-  const onUpdateActiveLink = (value) => {
+  const onUpdateActiveLink = (value: string) => {
     setActiveLink(value);
   };
   return (
