@@ -8,7 +8,6 @@ import colorSharp from "../assets/img/color-sharp.png";
 const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },
@@ -28,7 +27,7 @@ const Skills = () => {
 
   return (
     <section className="skill" id="skills">
-      <div className="container" style={{bgcolor:"#308"}}>
+      <div className="container">
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">

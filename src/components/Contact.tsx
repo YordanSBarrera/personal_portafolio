@@ -5,32 +5,31 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 enum formValue {
-  firstName,
-  lastName,
-  email,
-  phone,
-  message,
+  firstName = "firstName",
+  lastName = "lastName",
+  email = "email",
+  phone = "phone",
+  message = "message",
 }
+const formInitialDetails = {
+  firstName: "",
+  lastName: "",
+  email: "",
+  phone: "",
+  message: "",
+};
 type statusType = { success: boolean; message: string };
 
 const Contact = () => {
-  const formInitialDetails = {
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    message: "",
-  };
-
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState("Send");
   const [status, setStatus] = useState<statusType | null>(null);
 
-  const onFormUpdate = (category: formValue, value: string) => {
-    setFormDetails({
-      ...formDetails,
-      [category]: value,
-    });
+  const onFormUpdate = (key: formValue, value: string) => {
+    setFormDetails((prevDetails) => ({
+      ...prevDetails,
+      [key]: value,
+    }));
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -48,6 +47,7 @@ const Contact = () => {
     setFormDetails(formInitialDetails);
     if (result.code === 200) {
       setStatus({ success: true, message: "Message sent successfully" });
+      setFormDetails(formInitialDetails);
     } else {
       setStatus({
         success: false,
@@ -88,7 +88,7 @@ const Contact = () => {
                         <input
                           type="text"
                           value={formDetails.firstName}
-                          placeholder="First Name"
+                          placeholder={formValue.firstName}
                           onChange={(e) =>
                             onFormUpdate(formValue.firstName, e.target.value)
                           }
