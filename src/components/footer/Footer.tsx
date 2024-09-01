@@ -6,7 +6,7 @@ import IconInst from "../../assets/img/nav-icon3.svg";
 
 const Footer = () => {
   return (
-    <footer className="footer text-center p-3 mt-auto">
+    <footer className="footer">
       <Container>
         <Row className="align-items-center">
           <Col size={12} sm={6}>
