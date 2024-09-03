@@ -102,10 +102,7 @@ const Projects = () => {
                           delectus quasi inventore debitis quo.
                         </p>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="otherProjects">
-                        <p>Hola niña bella</p>
-                        <button onClick={() => {}}>Click</button>
-                      </Tab.Pane>
+                      <Tab.Pane eventKey="otherProjects"></Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
                 </div>
