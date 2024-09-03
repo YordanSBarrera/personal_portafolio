@@ -1,14 +1,14 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import imgAnimeFlix from "../assets/img/project-animeflixB.jpg";
-import imgAnimeFlix1 from "../assets/img/project-animeflix500x320.jpg";
-import imgModal from "../assets/img/project-modal.jpg";
-import imgEcommerce from "../assets/img/project-ecommerceCard.jpg";
-import imgEcommerce1 from "../assets/img/project-eCommerce500x320.jpg";
-import projImg from "../assets/img/project-img1.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
+import imgAnimeFlix from "../../assets/img/project-animeflixB.jpg";
+import imgAnimeFlix1 from "../../assets/img/project-animeflix500x320.jpg";
+import imgModal from "../../assets/img/project-modal.jpg";
+import imgEcommerce from "../../assets/img/project-ecommerceCard.jpg";
+import imgEcommerce1 from "../../assets/img/project-eCommerce500x320.jpg";
+import projImg from "../../assets/img/project-img1.png";
+import colorSharp2 from "../../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import ProjectCard from "./projects/ProjectCard";
+import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   const projects = [
