@@ -5,7 +5,7 @@ import IconLink from "../assets/img/nav-icon1.svg";
 import IconFace from "../assets/img/nav-icon2.svg";
 import IconInst from "../assets/img/nav-icon3.svg";
 
-const NavBar = () => {
+const Header = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
@@ -84,4 +84,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Header;
