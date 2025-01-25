@@ -1,5 +1,5 @@
 import "./App.css";
-import Banner from "./components/Banner";
+// import Banner from "./components/Banner";
 // import Contact from "./components/Contact";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
@@ -9,7 +9,7 @@ import Skills from "./components/skills/Skills";
 const Body = () => {
   return (
     <>
-      <Banner />
+      {/* <Banner /> */}
       <Projects />
       <Skills />
       {/* <Contact /> */}
